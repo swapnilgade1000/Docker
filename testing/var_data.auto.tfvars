@@ -8,7 +8,7 @@ key_name = "MyAWSKey"
 
 tags = {
     Enviorment = "staging"
-    owner = "jarvis"    
+    owner = "Swapnil"    
   }
 
 value = "Here we are trying to create machine from file destrucutre"
