@@ -1,4 +1,4 @@
-required provider "aws" {
+required_provider "aws" {
   region = "ap-south-1"
 }
 
