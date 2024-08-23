@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-providers "aws" "this" {
+provider "aws" {
   # Configuration options
   region = "ap-south-1"
 }
