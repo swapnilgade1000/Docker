@@ -10,6 +10,5 @@ resource "aws_instance" "this" {
   key_name                = "MyAWSKey"
 
   tags = var.tags
-
 }
 
