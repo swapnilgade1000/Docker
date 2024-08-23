@@ -30,7 +30,7 @@ provider "aws" {
 
 ##### Try to create one ubuntu server
 resource "aws_instance" "this" {
-  ami                     = var.ami
+  ami                     = "ami-0522ab6e1ddcc7055"
   instance_type           = var.instance_type
   key_name                = var.key_name
 
