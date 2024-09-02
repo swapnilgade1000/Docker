@@ -7,7 +7,7 @@ LABEL image="frontendstatic"
 RUN apt update 
 RUN apt install apache2
 RUN rm -rf /var/www/html/index.html
-COPY puppy /var/www/html/
+COPY puppy/* /var/www/html/puppy
 WORKDIR /var/www/html
 
 RUN mv puppy/* .
