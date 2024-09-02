@@ -13,7 +13,7 @@ COPY traffic.zip /var/www/html/traffic.zip
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment enviornment location
 RUN unzip traffic.zip
-RUN mv puppy/* .
+RUN mv traffic/* .
 #we are exposing our container to a port
 EXPOSE 80
 #we are providing container a processs 
