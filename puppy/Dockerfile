@@ -9,8 +9,6 @@ RUN apt install apache2
 RUN rm -rf /var/www/html/index.html
 COPY puppy/* /var/www/html/
 WORKDIR /var/www/html
-
-RUN mv puppy/* .
 #we are exposing our container to a port
 EXPOSE 80
 #we are providing container a processs 
