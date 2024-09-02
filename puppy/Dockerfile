@@ -5,7 +5,7 @@ FROM ubuntu:latest
 LABEL image="frontendstatic"
 #we are running few commands in our container(during container creation)
 RUN apt update 
-RUN apt install nginx
+RUN apt install apache2
 RUN rm -rf /var/www/html/index.html
 COPY puppy /var/www/html/
 WORKDIR /var/www/html
