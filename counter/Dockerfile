@@ -13,7 +13,7 @@ COPY counter.zip /var/www/html/counter.zip
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment enviornment location
 RUN unzip counter.zip
-RUN mv counter-html/* .
+RUN mv * .
 #we are exposing our container to a port
 EXPOSE 80
 #we are providing container a processs 
