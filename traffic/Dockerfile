@@ -10,7 +10,7 @@ RUN rm -rf /var/www/html/index.html
 #we are copying source code from local storage
 COPY traffic-light /var/www/html/
 #we are moving to /var/www/html
-WORKDIR /var/www/html
+WORKDIR /var/www/html/index.html
 
 #we are exposing our container to a port
 EXPOSE 80
