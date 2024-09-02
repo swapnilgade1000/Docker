@@ -5,14 +5,12 @@ FROM ubuntu:latest
 LABEL image="frontendstatic"
 #we are running few commands in our container(during container creation)
 RUN apt update 
-RUN apt install apache2 unzip -y
+RUN apt install apache2 -y
 RUN rm -rf /var/www/html/index.html
 #we are copying source code from local storage
-COPY traffic.zip /var/www/html/traffic.zip
+COPY traffic-light /var/www/html/
 #we are moving to /var/www/html
 WORKDIR /var/www/html
-#we are unzipping and extracting the source code in default deployment enviornment location
-RUN unzip traffic.zip
 
 #we are exposing our container to a port
 EXPOSE 80
