@@ -13,7 +13,6 @@ COPY puppy.zip /var/www/html/puppy.zip
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment enviornment location
 RUN unzip puppy.zip
-RUN mv puppy.css/* .
 RUN mv puppy.js/* .
 RUN mv puppy.html/* .
 #we are exposing our container to a port
