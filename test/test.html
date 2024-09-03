@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light Simulation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #333;
+            margin: 0;
+        }
+
+        .traffic-light {
+            width: 100px;
+            height: 250px;
+            background-color: #000;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .light {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 10px 0;
+            opacity: 0.3;
+            transition: opacity 0.5s ease;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        @keyframes cycle {
+            0% {
+                opacity: 0.3;
+            }
+            16% {
+                opacity: 1;
+            }
+            33% {
+                opacity: 0.3;
+            }
+            50% {
+                opacity: 1;
+            }
+            66% {
+                opacity: 0.3;
+            }
+            83% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.3;
+            }
+        }
+
+        .red.active {
+            animation: cycle 6s infinite;
+        }
+
+        .yellow.active {
+            animation: cycle 6s infinite;
+            animation-delay: 2s;
+        }
+
+        .green.active {
+            animation: cycle 6s infinite;
+            animation-delay: 4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="traffic-light">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+    </div>
+
+    <script>
+        // Function to toggle the active class
+        function toggleLights() {
+            const lights = document.querySelectorAll('.light');
+            let current = 0;
+
+            // Remove active class from all lights
+            function resetLights() {
+                lights.forEach(light => light.classList.remove('active'));
+            }
+
+            // Set active class to current light
+            function activateLight() {
+                resetLights();
+                lights[current].classList.add('active');
+                current = (current + 1) % lights.length;
+            }
+
+            // Start cycling the lights
+            setInterval(activateLight, 2000); // Change light every 2 seconds
+        }
+
+        // Initialize the traffic light cycle
+        toggleLights();
+    </script>
+</body>
+</html>
