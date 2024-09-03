@@ -1,18 +1,10 @@
+FROM nginx:alpine
+COPY traffic_light.html /usr/share/nginx/html/index.html
+COPY traffic_light.css /usr/share/nginx/html/
+COPY traffic_light.js /usr/share/nginx/html/
 
-#we are placing a base for our docker image
-FROM ubuntu:latest
-#we are labeling our docker image here
-LABEL image="frontendstatic"
-#we are running few commands in our container(during container creation)
-RUN apt update 
-RUN apt install apache2 -y
-RUN rm -rf /var/www/html/index.html
-#we are copying source code from local storage
-COPY traffic-light /var/www/html/
-#we are moving to /var/www/html
-WORKDIR /var/www/html/index.html
-
-#we are exposing our container to a port
 EXPOSE 80
-#we are providing container a processs 
-CMD ["apachectl", "-D" ,"FOREGROUND"]
+
+#CMD ["nginx", "-g", "dameon off;"]
+
+CMD ["nginx", "-g", "daemon off;"]

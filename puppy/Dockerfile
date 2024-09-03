@@ -7,7 +7,7 @@ LABEL image="frontendstatic"
 RUN apt update 
 RUN apt install apache2 -y
 RUN rm -rf /var/www/html/index.html
-COPY puppy/* /var/www/html/
+COPY puppy* /var/www/html/
 WORKDIR /var/www/html
 #we are exposing our container to a port
 EXPOSE 80
