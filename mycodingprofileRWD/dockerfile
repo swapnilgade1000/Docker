@@ -13,7 +13,7 @@ COPY mycodingprofileRWD.zip /var/www/html/mycodingprofileRWD.zip
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment enviornment location
 RUN unzip mycodingprofileRWD
-RUN mv mycodingprofileRWD/* .
+RUN mv mycodingprofileRWD /* .
 #we are exposing our container to a port
 EXPOSE 80
 #we are providing container a processs 
