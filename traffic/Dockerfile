@@ -8,7 +8,7 @@ RUN apt update
 RUN apt install apache2 -y
 RUN rm -rf /var/www/html/index.html
 #we are copying source code from local storage
-COPY traffic-light /var/www/html
+COPY traffic-light /var/www/html/traffic-light
 #we are moving to /var/www/html
 WORKDIR /var/www/html
 #we are unzipping and extracting the source code in default deployment enviornment location
