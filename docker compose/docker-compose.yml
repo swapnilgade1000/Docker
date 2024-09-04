@@ -4,8 +4,8 @@ services :
    port : 
     - '80-80'
    network_mode  : default
-   volume : -
-      myapp:/usr/share/nginx/html/
+   volume : 
+      - myapp:/usr/share/nginx/html/
 
      container_name : gade
      build: . /home/ubuntu/docker/docker compose
