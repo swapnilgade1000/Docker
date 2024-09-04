@@ -6,13 +6,13 @@ services:  #services syntax comples the creation of cont from img via docfile , 
       network_mode: bridge
       container_name: setback
       volumes: 
-         - myapp:/usr/local/apache2/conf/httpd.conf
+         - ./my-httpd.conf:/usr/local/apache2/conf/httpd.conf
   nginxfrontendcontwo:
       build: . 
       #ports: - "81:81"
       network_mode: host
       volumes: 
-        - myapp2:myapp:/usr/local/apache2/conf/httpd.conf
+         - ./my-httpd.conf:/usr/local/apache2/conf/httpd.conf
       container_name: backend 
 
 volumes:   # will create a volume for you.
