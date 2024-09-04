@@ -3,6 +3,7 @@ LABEL image="frontendstatic"
 RUN apt update 
 RUN apt install apache2 -y
 RUN rm -rf /var/www/html/index.html
-WORKDIR /var/www/html/Vr-website.html
+WORKDIR /var/www/html/
+RUN cp Vr-website.html /var/www/html/
 EXPOSE 80
 CMD ["apachectl", "-D" ,"FOREGROUND"]
