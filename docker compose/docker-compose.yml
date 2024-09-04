@@ -1,10 +1,10 @@
 services: 
   nginxone: swapnil
 ontainer_name: swapnil
-   build: .
-   ports: 
+build: .
+ports: 
      - '80:80'
-   network_mode: default
+     network_mode: default
    #volumes: 
       -
 
