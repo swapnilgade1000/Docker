@@ -3,7 +3,7 @@ services:
 ontainer_name: swapnil
 build: .
 ports: -'80:80'
-     network_mode: default
+network_mode: default
    #volumes: 
       -
 
