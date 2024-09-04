@@ -1,5 +1,5 @@
 services: 
-  nginxone: swapnil
+nginxone: swapnil
 ontainer_name: swapnil
 build: .
 ports: -'80:80'
