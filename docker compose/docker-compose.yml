@@ -1,4 +1,5 @@
 services: latest
+web;
 nginxone: swapnil
 ontainer_name: swapnil
 build: .
