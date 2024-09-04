@@ -1,18 +1,19 @@
 services: 
+  nginxone:
    container_name: swapnil
-   build: /home/ubuntu/docker/docker compose
-   port: 
-    - '80-80'
+   build: .
+   ports: 
+     - '80:80'
    network_mode: default
-   volume: 
+   volumes: 
       - myapp:/usr/share/nginx/html/
 
-    frontendnginxsecond: 
+   nginxtwo: 
      container_name: gade
-     build: . /home/ubuntu/docker/docker compose
+     build: . 
      ports: 
       - '81:81'
      network_mode: default
      volumes: 
        - myapp2:/usr/share/nginx/html/ 
-     d
+     
