@@ -4,7 +4,7 @@ services:  #services syntax comples the creation of cont from img via docfile , 
       ports: 
           - '81:81'
       network_mode: bridge
-      container_name: frontnend
+      container_name: setback
       volumes: 
          - myapp:/usr/share/nginx/html/
   nginxfrontendcontwo:
