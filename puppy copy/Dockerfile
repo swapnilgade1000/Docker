@@ -10,6 +10,6 @@ RUN rm -rf /var/www/html/index.html
 COPY puppy* /var/www/html/
 WORKDIR /var/www/html
 #we are exposing our container to a port
-EXPOSE 80
+EXPOSE 81
 #we are providing container a processs 
 CMD ["apachectl", "-D" ,"FOREGROUND"]

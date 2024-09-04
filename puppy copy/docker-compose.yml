@@ -14,6 +14,13 @@ services:  #services syntax comples the creation of cont from img via docfile , 
       volumes: 
          - ./my-httpd.conf:/usr/local/apache2/conf/httpd.conf
       container_name: backend 
+volumes:   # will create a volume for you.
+      myapp:
+      myapp2:
+networks:
+  myappnetwork:
+
+
 
 
 
