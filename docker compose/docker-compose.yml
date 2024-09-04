@@ -1,9 +1,0 @@
-services:
-web:
-nginxone: swapnil
-ontainer_name: swapnil
-build: .
-ports: -'80:80'
-network_mode: default
- 
-     
