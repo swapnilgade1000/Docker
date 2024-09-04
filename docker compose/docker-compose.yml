@@ -1,6 +1,6 @@
 services: 
   nginxone: swapnil
-   container_name: swapnil
+      container_name: swapnil
    build: .
    ports: 
      - '80:80'
