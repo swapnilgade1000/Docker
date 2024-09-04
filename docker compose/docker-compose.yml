@@ -4,14 +4,5 @@ ontainer_name: swapnil
 build: .
 ports: -'80:80'
 network_mode: default
-   #volumes: 
-      -
-
-  # nginxtwo: 
-   #  container_name: gade
-    #ports: 
-      #- '81:81'
-     #network_mode: default
-    # volumes: 
-      # - myapp2:/usr/share/nginx/html/ 
+ 
      
