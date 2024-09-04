@@ -12,7 +12,7 @@ services:
      container_name: gade
      build: . 
      ports: 
-      - '81:81'
+      #- '81:81'
      network_mode: default
      volumes: 
        - myapp2:/usr/share/nginx/html/ 
