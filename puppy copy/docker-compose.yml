@@ -14,11 +14,11 @@ services:  #services syntax comples the creation of cont from img via docfile , 
       volumes: 
         - myapp2:/usr/share/nginx/html/ 
       container_name: backend 
-      
-volumes:   # will create a volume for you.
+
+#volumes:   # will create a volume for you.
       myapp:
       myapp2:
-networks:
+#networks:
   myappnetwork:
 
 
