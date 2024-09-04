@@ -6,7 +6,7 @@ services :
     - '80-80'
    network_mode  : default
    volume : 
-    - myapp:/usr/share/nginx/html/
+     - myapp:/usr/share/nginx/html/
 
     gade :
      container_name :gade
