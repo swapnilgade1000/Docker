@@ -7,6 +7,9 @@ services:  #services syntax comples the creation of cont from img via docfile , 
       container_name: frontnend
       #volumes: 
         
+
+
+        
  nginxfrontendcontwo:
       build: . 
       #ports: - "81:81"
