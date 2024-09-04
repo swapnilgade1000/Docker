@@ -1,4 +1,4 @@
-services: latest
+services:
 web:
 nginxone: swapnil
 ontainer_name: swapnil
