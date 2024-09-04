@@ -9,7 +9,7 @@ services:  #services syntax comples the creation of cont from img via docfile , 
          - myapp:/usr/share/nginx/html/
   nginxfrontendcontwo:
       build: . 
-      ports: - "81:81"
+      #ports: - "81:81"
       network_mode: host
       volumes: 
         - myapp2:/usr/share/nginx/html/ 
