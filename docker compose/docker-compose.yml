@@ -1,5 +1,5 @@
 services: 
-  nginxone:
+  nginxone: swapnil
    container_name: swapnil
    build: .
    ports: 
