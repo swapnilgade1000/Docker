@@ -1,5 +1,4 @@
 services : 
-  swapnil :
    container_name : swapnil
    build : /home/ubuntu/docker/docker compose
    port : 
@@ -8,7 +7,6 @@ services :
    volume : 
      - myapp:/usr/share/nginx/html/
 
-    gade :
      container_name :gade
      build: . /home/ubuntu/docker/docker compose
      #ports: - '81:81'
