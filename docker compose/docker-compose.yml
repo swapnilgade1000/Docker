@@ -1,5 +1,5 @@
 services: 
- frontendcontainerfirst:
+ swapnil's-container:
    container_name: swapnil
    build: /home/ubuntu/docker/docker compose
    port: 
@@ -8,7 +8,7 @@ services:
    volume: 
       - myapp:/usr/share/nginx/html/
 
-    frontendcontainersecond: 
+    gade'-container: 
      container_name: gade
      build: . /home/ubuntu/docker/docker compose
      ports: 
