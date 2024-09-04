@@ -5,8 +5,8 @@ services:
    ports: 
      - '80:80'
    network_mode: default
-   volumes: 
-      - myapp:/usr/share/nginx/html/
+   #volumes: 
+      -
 
    nginxtwo: 
      container_name: gade
@@ -14,6 +14,6 @@ services:
      ports: 
       #- '81:81'
      network_mode: default
-     volumes: 
+    # volumes: 
        - myapp2:/usr/share/nginx/html/ 
      
