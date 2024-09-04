@@ -5,11 +5,7 @@ services:  #services syntax comples the creation of cont from img via docfile , 
           - '81:81'
       network_mode: bridge
       container_name: frontnend
-      #volumes: 
-        
-
-
-        
+      #volumes:     
  nginxfrontendcontwo:
       build: . 
       #ports: - "81:81"
