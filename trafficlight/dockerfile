@@ -10,7 +10,6 @@ RUN rm -rf /var/www/html/index.html
 #we are copying source code from local storage
 COPY traffic_light/index.html /var/www/html/index.html
 #we are moving to /var/www/html
-WORKDIR /var/www/html/
 #we are unzipping and extracting the source code in default deployment enviornment locationx
 #we are exposing our container to a port
 EXPOSE 80
